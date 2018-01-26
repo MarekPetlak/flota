@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Słownik pojemności {% endblock %}
+{% block content %}
+
+    <h1>Pojemności silników</h1>
+    <p><a href="{% url 'cars:capacity-add' %}" class="btn btn-default">Dodaj nową pojemność</a></p>
+<table class="table table-stripped table-hover">
+ {% for item in items %}
+    <tr>
+        <th>{{ item.capacity_id }}</th>
+        <th>{{ item.capacity_value }}</th>
+        <th>{{ item.capacity_short }}</th>
+    </tr>
+    {% endfor %}
+</table>
+
+
+{% endblock %}
+
+

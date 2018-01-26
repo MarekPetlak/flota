@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} Dodawanie nowej pojemności do słownika {% endblock %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-xs-12 col-md-7">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form class="horizontal" action="" method="POST">
+                        {% csrf_token %}
+                        {% include 'cars/form-template.html' %}
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Zapisz zmiany</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

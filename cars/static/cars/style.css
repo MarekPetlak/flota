@@ -1,0 +1,23 @@
+body {
+    min-height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: url('images/speed.jpg') center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #eee;
+}
+
+.navbar{
+    margin-top: 25px;
+}
+
+.navbar-brand {
+    font-family: 'Marvel', sans-serif;
+    font-weight: bold;
+}
+
+label {
+color: #444;
+text-transform: uppercase;
+font-weight: normal;
+}
